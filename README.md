@@ -39,17 +39,13 @@ Ensure you have [Node.js](https://nodejs.org/) (v16 or higher) and npm installed
 
 ## 📸 Screenshots
 
-*Ensure you place your screenshots inside a `/docs` or `/public` folder to display them in this README!*
 
-### Desktop View (Dark & Light Mode)
-| Dark Mode (Default) | Light Mode |
-| --- | --- |
-| ![Desktop Dark Mode](https://raw.githubusercontent.com/Lakshay-Deol/assignment/main/docs/desktop_dark.png) | ![Desktop Light Mode](https://raw.githubusercontent.com/Lakshay-Deol/assignment/main/docs/desktop_light.png) |
 
-### Mobile View (Dark & Light Mode)
-| Mobile Dark Mode | Mobile Light Mode |
-| --- | --- |
-| ![Mobile Dark Mode](https://raw.githubusercontent.com/Lakshay-Deol/assignment/main/docs/mobile_dark.png) | ![Mobile Light Mode](https://raw.githubusercontent.com/Lakshay-Deol/assignment/main/docs/mobile_light.png) |
+### Desktop View 
+![desktop view](public/desktopview1.png)
+
+### Mobile View 
+![alt text](public/desktopview2.png)
 
 ---
 
