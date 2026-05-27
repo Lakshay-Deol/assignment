@@ -1,0 +1,133 @@
+.card-blue {
+  background: linear-gradient(135deg, #0a2463 0%, #1a4b9c 50%, #0d3b8f 100%);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.card-blue::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+    ellipse at top right,
+    rgba(59, 130, 246, 0.15) 0%,
+    transparent 60%
+  );
+  pointer-events: none;
+}
+
+.card-title-blue {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #ffffff;
+  position: relative;
+}
+
+.blue-table th {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.blue-table td {
+  color: #ffffff;
+}
+
+.row-label-blue {
+  color: rgba(255, 255, 255, 0.75) !important;
+  font-weight: 400;
+  white-space: normal;
+}
+
+.net-row-blue td {
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  font-weight: 500;
+}
+
+.effective-row {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.effective-label {
+  font-size: 0.92rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 600;
+}
+
+.effective-value {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.savings-banner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+  padding: 10px 16px;
+  background: rgba(0, 210, 106, 0.12);
+  border: 1px solid rgba(0, 210, 106, 0.25);
+  border-radius: 8px;
+  font-size: 0.85rem;
+  color: #34d399;
+  position: relative;
+  animation: fadeSlideIn 0.3s ease;
+}
+
+.savings-icon {
+  font-size: 1.1rem;
+}
+
+.savings-banner strong {
+  color: #34d399;
+  font-weight: 700;
+}
+
+.skeleton-line.blue {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.06) 25%,
+    rgba(255, 255, 255, 0.12) 50%,
+    rgba(255, 255, 255, 0.06) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .card-title-blue {
+    font-size: 1rem;
+  }
+
+  .effective-value {
+    font-size: 1.15rem;
+  }
+
+  .savings-banner {
+    font-size: 0.78rem;
+    padding: 8px 12px;
+  }
+}

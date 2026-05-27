@@ -1,0 +1,132 @@
+.card {
+  border-radius: 12px;
+  padding: 24px;
+  flex: 1;
+  min-width: 0;
+}
+
+.card-dark {
+  background: var(--color-bg-card-dark);
+  border: 1px solid var(--color-border);
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: var(--color-text-primary);
+}
+
+.gains-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.gains-table th {
+  text-align: right;
+  color: var(--color-text-secondary);
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0 0 12px;
+  white-space: nowrap;
+}
+
+.gains-table th:first-child {
+  text-align: left;
+}
+
+.gains-table td {
+  padding: 8px 0;
+  text-align: right;
+  font-size: 0.88rem;
+  color: var(--color-text-primary);
+  white-space: nowrap;
+}
+
+.gains-table td:first-child {
+  text-align: left;
+}
+
+.gains-table .row-label {
+  color: var(--color-text-secondary);
+  font-weight: 400;
+  white-space: normal;
+}
+
+.gains-table .net-row td {
+  padding-top: 14px;
+  border-top: 1px solid var(--color-border);
+  font-weight: 500;
+}
+
+.realised-row {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--color-border);
+  flex-wrap: wrap;
+}
+
+.realised-label {
+  font-size: 0.92rem;
+  color: var(--color-text-secondary);
+  font-weight: 500;
+}
+
+.realised-value {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+/* Skeleton loading */
+.card-skeleton {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.skeleton-line {
+  height: 16px;
+  width: 60%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.04) 25%,
+    rgba(255, 255, 255, 0.08) 50%,
+    rgba(255, 255, 255, 0.04) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 4px;
+}
+
+.skeleton-line.wide {
+  width: 85%;
+  height: 24px;
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: 18px 16px;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .gains-table td,
+  .gains-table th {
+    font-size: 0.8rem;
+  }
+
+  .realised-value {
+    font-size: 1.15rem;
+  }
+}

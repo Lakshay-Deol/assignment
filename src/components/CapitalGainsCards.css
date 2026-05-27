@@ -1,0 +1,12 @@
+.capital-gains-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+@media (max-width: 900px) {
+  .capital-gains-cards {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}

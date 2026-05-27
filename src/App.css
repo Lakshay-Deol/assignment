@@ -1,0 +1,121 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.main-content {
+  flex: 1;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 28px 48px 48px;
+  width: 100%;
+}
+
+.page-header {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.page-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.how-it-works-container {
+  position: relative;
+  display: inline-block;
+}
+
+.how-it-works {
+  font-size: 0.85rem;
+  color: var(--color-accent-blue);
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.how-it-works:hover {
+  text-decoration: underline;
+}
+
+.how-it-works-tooltip {
+  position: absolute;
+  top: calc(100% + 12px);
+  left: 0;
+  width: 260px;
+  background: #ffffff;
+  color: #333333;
+  padding: 12px 14px;
+  border-radius: 6px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  font-size: 0.75rem;
+  line-height: 1.4;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s, visibility 0.2s;
+  z-index: 100;
+  text-align: left;
+  pointer-events: none;
+}
+
+.how-it-works-tooltip::before {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 36px;
+  border: 6px solid transparent;
+  border-bottom-color: #ffffff;
+}
+
+.how-it-works-container:hover .how-it-works-tooltip {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.how-it-works-tooltip p {
+  margin: 0;
+}
+
+.know-more {
+  color: var(--color-accent-blue);
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+
+.section-gap {
+  margin-top: 24px;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding: 20px 16px 36px;
+  }
+
+  .page-title {
+    font-size: 1.25rem;
+  }
+
+  .page-header {
+    margin-bottom: 18px;
+  }
+
+  .how-it-works-tooltip {
+    left: auto;
+    right: 0;
+    width: 280px;
+    max-width: 80vw;
+  }
+
+  .how-it-works-tooltip::before {
+    left: auto;
+    right: 32px;
+  }
+}
+
